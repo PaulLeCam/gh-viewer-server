@@ -27,11 +27,13 @@ module.exports = async (req, res) => {
           },
           json: true,
         })
+        // TODO: check response
         redirect(res, 303, `/success?${stringify(auth.body)}`)
         return
       }
       // Redirected to client-known success URL -> end of flow
       case '/success':
+        send(res, 200)
         return
 
       default:
