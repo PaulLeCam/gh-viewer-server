@@ -1,6 +1,7 @@
 const got = require('got')
 const { send } = require('micro')
 const redirect = require('micro-redirect')
+const { stringify } = require('querystring')
 const { parse } = require('url')
 
 const { CLIENT_ID, CLIENT_SECRET } = process.env
@@ -26,7 +27,7 @@ module.exports = async (req, res) => {
           },
           json: true,
         })
-        redirect(res, 303, `/success?${qs.stringify(auth)}`)
+        redirect(res, 303, `/success?${stringify(auth)}`)
         return
       }
       // Redirected to client-known success URL -> end of flow
