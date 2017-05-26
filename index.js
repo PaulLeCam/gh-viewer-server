@@ -37,6 +37,7 @@ module.exports = async (req, res) => {
         send(res, 404, 'Not found')
     }
   } catch (err) {
+    console.log(req.url, err)
     send(res, 500, 'Internal error')
   }
 }
