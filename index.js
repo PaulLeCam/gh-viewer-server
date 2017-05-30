@@ -5,7 +5,7 @@ const { stringify } = require('querystring')
 const { parse } = require('url')
 
 const { CLIENT_ID, CLIENT_SECRET } = process.env
-const AUTH_URL = `http://github.com/login/oauth/authorize?client_id=${CLIENT_ID}`
+const AUTH_URL = `https://github.com/login/oauth/authorize?client_id=${CLIENT_ID}`
 const TOKEN_URL = 'https://github.com/login/oauth/access_token'
 
 module.exports = async (req, res) => {
