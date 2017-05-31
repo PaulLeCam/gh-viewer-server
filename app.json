@@ -1,7 +1,8 @@
 {
-  "name": "gh-viewer",
+  "name": "GH Viewer authentication server",
   "env": {
     "CLIENT_ID": "",
-    "CLIENT_SECRET": ""
+    "CLIENT_SECRET": "",
+    "SCOPE": "user:follow read:org"
   }
 }
