@@ -1,5 +1,5 @@
 {
-  "name": "GH Viewer authentication server",
+  "name": "GH Viewer authentication",
   "env": {
     "CLIENT_ID": "",
     "CLIENT_SECRET": "",
