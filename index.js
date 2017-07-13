@@ -7,7 +7,7 @@ const { parse } = require('url')
 const { CLIENT_ID, CLIENT_SECRET, SCOPE } = process.env
 const AUTH_PARAMS = stringify({
   client_id: CLIENT_ID,
-  scope: SCOPE || '',
+  scope: SCOPE ? SCOPE : 'public_repo',
 })
 const AUTH_URL = `https://github.com/login/oauth/authorize?${AUTH_PARAMS}`
 const TOKEN_URL = 'https://github.com/login/oauth/access_token'

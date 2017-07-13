@@ -3,6 +3,6 @@
   "env": {
     "CLIENT_ID": "",
     "CLIENT_SECRET": "",
-    "SCOPE": "user:follow read:org"
+    "SCOPE": "public_repo read:org"
   }
 }
